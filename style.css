@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(235, 235, 235);
+    font-family: Helvetica, sans-serif;
+    background-image: url("blackelegant.jpg");
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.side-panel{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.side-panel a{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: grey;
+    display: block;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.side-panel a:hover{
+    color: white;
+}
+
+.side-panel .close-btn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+}
+
+.open-btn{
+    font-size: 40px;
+    position: sticky;
+    cursor: pointer;
+    background-color: inherit;
+    color: #007bb5;
+    padding: 10px 15px;
+    border: none;
+    height: 50%;
+    animation: blinker 2s linear infinite;
+    float: left;
+} 
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+.open-btn:hover{
+    color: white;
+    animation-play-state: paused;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-git{
+    font-size:48px;
+    color: white;
+    background-color: black;
+}
+
+.header-container{
+    display: inline-block;
+    max-height: 76px;
+    width: 100%;
+    text-align: center;
+}
+.side-social{
+    display: flex;
+    height: 50%;
+    float: right;
+}
+
+.home-page{
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+}
+   
+
+.my-pic{
+   position: relative;
+   width: 400px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+img{
+    display: block;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    color: #f1f1f1; 
+    width: 350px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .my-pic img:hover{
+      opacity: 0.2;
+  }
+  .my-pic:hover .overlay {
+    opacity: 1;
+  }
+  .about-me{
+    color: white; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 200px; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    line-height: 1; 
+    text-align: center;
+}
+.welcome{
+    color: white; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+    width: 100%;
+}
+.information{
+    margin-top: 10px;
+    color: white; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-style: oblique;
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+#span {
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron, sans-serif;
+    letter-spacing: 7px;
+}
+@media only screen and (max-width: 900px) {
+    #span{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 467px) {
+    #span{
+        font-size: 20px;
+    }
+    .about-me{
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width: 345px){
+
+    #span{
+        font-size: 10px;
+    }
+}

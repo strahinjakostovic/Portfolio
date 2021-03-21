@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-panel" id="sidePanel">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+            <a href="index.html">Home</a>
+            <a href="Experience/exp.html">Experience</a>
+            <a href="About me/about.html">About me</a>
+            <a href="Contact/contact.html">Contact me</a>
+        </div>
+        <div class="header-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+            <span id="span" onload="time()"></span>
+        <div class="side-social">
+            <a href="https://www.linkedin.com/in/strahinja-kostovic-7b1aba1ba/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/strahinjakostovic" class="fa fa-git"></a>
+        </div>
+        </div>
+        <div class="home-page">
+            <div class="my-pic">
+                <img src="Slika.png" alt="Strahinja Kostovic" id="myImg">
+                <div class="overlay">My name is Strahinja!</div>
+            </div>
+            <div class="information">
+                <span id="information">Information technology engineer</span>
+            </div>
+            <div class="about-me">
+                <span id="hello-span">hello!</span>
+            </div>
+            <div class="welcome">
+                <span id="welcome-span">Welcome to my portfolio and thank you for visiting! <br> If you want to see more about me, visit the blinking navigation pane!</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

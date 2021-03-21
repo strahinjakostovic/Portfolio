@@ -1,0 +1,248 @@
+body{
+    background-color: rgb(235, 235, 235);
+    font-family: Helvetica, sans-serif;
+    background-image: url("../blackelegant.jpg");
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.side-panel{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.side-panel a{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: grey;
+    display: block;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.side-panel a:hover{
+    color: white;
+}
+
+.side-panel .close-btn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+}
+
+.open-btn{
+    font-size: 40px;
+    position: sticky;
+    cursor: pointer;
+    background-color: inherit;
+    color: #007bb5;
+    padding: 10px 15px;
+    border: none;
+    height: 50%;
+    animation: blinker 2s linear infinite;
+    float: left;
+} 
+  @keyframes blinker{
+    50% {
+      opacity: 0;
+    }
+  }
+.open-btn:hover{
+    color: white;
+    animation-play-state: paused;
+}
+
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-git{
+    font-size:48px;
+    color: white;
+    background-color: black;
+}
+
+.header-container{
+    display: inline-block;
+    width: 100%;
+    max-height: 76px;
+    text-align: center;
+}
+.side-social{
+    display: flex;
+    height: 50%;
+    float: right;
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.img-container{
+    width: 100%;
+    height: auto;
+    margin-left: 13%;
+    
+}
+img{
+    display: block;
+    width: 100%;
+    border-radius: 0 50% 50% 50%;
+}
+
+.text{
+    height: auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#text-span{
+    color: white;
+    margin-top: -5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+.skills{
+    width: 100%;
+    margin-right: 13%;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  #myBar {
+    height: 15px;
+    background-color: #007bb5;
+    text-align: right;
+    line-height: 2px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  #tech-skills{
+      font-weight: bold;
+  }
+  .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.node {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display:inline-block;
+    transition: all 1000ms ease;
+}
+
+.divider {
+    height: 40px;
+    width: 2px;
+    margin-left: 4px;
+    transition: all 800ms ease;
+}
+
+li a {
+    display:inline-block;
+    margin-left: 25px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    text-overflow: clip;
+}
+li {
+    list-style: none;
+    line-height: 1px;
+    width: 100%;
+}
+
+.grey { 
+    background-color: rgba(201, 201, 201, 1); 
+}
+.blue {
+    background-color: #007bb5;
+}
+#span {
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron, sans-serif;
+    letter-spacing: 7px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        display: block;
+    }
+    .img-container{
+        margin-left: 0;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    #span{
+        font-size: 40px;
+    }
+    .skills{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    #span{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 345px){
+
+    #span{
+        font-size: 10px;
+    }
+}
