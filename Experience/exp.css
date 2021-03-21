@@ -47,6 +47,7 @@ body{
     border: none;
     height: 50%;
     animation: blinker 2s linear infinite;
+    float: left;
 } 
   @keyframes blinker {
     50% {
@@ -85,14 +86,15 @@ body{
 }
 
 .header-container{
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     max-height: 73px;
     width: 100%;
+    text-align: center;
 }
 .side-social{
     display: flex;
     height: 50%;
+    float: right;
 }
 
 #span {
@@ -101,8 +103,6 @@ body{
     font-size: 60px;
     font-family: Orbitron, sans-serif;
     letter-spacing: 7px;
-    margin-left: 19%;
-    margin-top: 2%;
 }
 
 .collapsible {
@@ -129,3 +129,20 @@ body{
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+
+  @media only screen and (max-width: 900px) {
+    #span{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 467px) {
+    #span{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 345px){
+
+    #span{
+        font-size: 10px;
+    }
+}
