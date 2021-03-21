@@ -128,7 +128,7 @@ img{
     position: absolute; 
     bottom: 0; 
     color: #f1f1f1; 
-    width: 350px;
+    width: 100%;
     transition: .5s ease;
     opacity:0;
     color: white;
